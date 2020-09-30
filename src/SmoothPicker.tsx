@@ -288,7 +288,7 @@ class SmoothPicker extends Component<Props, State> {
           this.onMomentum = true;
           this.fingerAction = true;
         }}
-        onMomentumScrollEnd={() => {
+        onScrollEndDrag={() => {
           this.fingerAction = false;
           if (this.onMomentum && magnet && !snapInterval) {
             this.onMomentum = false;
